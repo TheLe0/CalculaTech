@@ -31,32 +31,32 @@
 
         <Button
             android:id="@+id/btnC"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/C"
             android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
         <Button
             android:id="@+id/btnChangeSignal"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/changeSignal"
             android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
         <Button
             android:id="@+id/btnPercent"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/percent"
             android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
         <Button
@@ -66,8 +66,8 @@
             android:layout_weight="1"
             android:text="@string/division"
             android:textSize="@dimen/buttonSize"
-            tools:ignore="NestedWeights"
-            style="?android:attr/buttonBarButtonStyle"/>
+            style="@style/styleButtonOthers"
+            tools:ignore="NestedWeights" />
 
     </LinearLayout>
 
@@ -83,7 +83,7 @@
             android:layout_weight="1"
             android:text="@string/seven"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
         <Button
@@ -93,7 +93,7 @@
             android:layout_weight="1"
             android:text="@string/eight"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
         <Button
@@ -103,7 +103,7 @@
             android:layout_weight="1"
             android:text="@string/nine"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
         <Button
@@ -113,7 +113,7 @@
             android:layout_weight="1"
             android:text="@string/multiplier"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonOperations"
             tools:ignore="NestedWeights"/>
 
     </LinearLayout>
@@ -130,7 +130,7 @@
             android:layout_weight="1"
             android:text="@string/four"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
         <Button
@@ -140,7 +140,7 @@
             android:layout_weight="1"
             android:text="@string/five"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
         <Button
@@ -150,7 +150,7 @@
             android:layout_weight="1"
             android:text="@string/six"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
         <Button
@@ -160,7 +160,7 @@
             android:layout_weight="1"
             android:text="@string/subtract"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonOperations"
             tools:ignore="NestedWeights"/>
 
     </LinearLayout>
@@ -177,7 +177,7 @@
             android:layout_weight="1"
             android:text="@string/one"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
         <Button
@@ -187,7 +187,7 @@
             android:layout_weight="1"
             android:text="@string/two"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
         <Button
@@ -197,7 +197,7 @@
             android:layout_weight="1"
             android:text="@string/three"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
         <Button
@@ -207,7 +207,7 @@
             android:layout_weight="1"
             android:text="@string/sum"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonOperations"
             tools:ignore="NestedWeights" />
 
     </LinearLayout>
@@ -224,7 +224,7 @@
             android:layout_weight="1"
             android:text="@string/i"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
         <Button
@@ -234,7 +234,7 @@
             android:layout_weight="1"
             android:text="@string/zero"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"
             />
 
@@ -245,7 +245,7 @@
             android:layout_weight="1"
             android:text="@string/comma"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
         <Button
@@ -255,7 +255,7 @@
             android:layout_weight="1"
             android:text="@string/equal"
             android:textSize="@dimen/buttonSize"
-            style="?android:attr/buttonBarButtonStyle"
+            style="@style/styleButtonOperations"
             tools:ignore="NestedWeights" />
 
     </LinearLayout>
