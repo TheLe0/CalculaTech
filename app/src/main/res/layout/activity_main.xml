@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
@@ -21,5 +21,35 @@
             android:text="@string/zero"
             android:textAlignment="textEnd"
             android:textSize="@dimen/numberSize" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/C"
+            android:layout_weight="1"
+            android:textSize="@dimen/buttonSize"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnChangeSignal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/buttonSize"
+            android:text="@string/changeSignal"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights"/>
+
+    </LinearLayout>
+
 </LinearLayout>
