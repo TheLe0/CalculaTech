@@ -11,6 +11,6 @@ object Operator {
     const val DIVISION = "÷"
     const val MEMORY_CLEAR = "MC"
     const val MEMORY_SUM = "M+"
+    const val MEMORY_SUBTRACT = "M-"
     const val MEMORY_RECOVERY = "MR"
-    const val MEMORY_SHOW = "MS"
 }

@@ -20,4 +20,5 @@
     <string name="nine">9</string>
     <string name="equal">=</string>
     <string name="i">I</string>
+    <string name="welcomeMessage">Application loaded successful!</string>
 </resources>
