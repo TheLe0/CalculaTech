@@ -37,6 +37,7 @@
             android:layout_weight="1"
             android:text="@string/C"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
@@ -47,6 +48,7 @@
             android:layout_weight="1"
             android:text="@string/changeSignal"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
@@ -57,6 +59,7 @@
             android:layout_weight="1"
             android:text="@string/percent"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
@@ -67,6 +70,7 @@
             android:layout_weight="1"
             android:text="@string/division"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
@@ -84,6 +88,7 @@
             android:layout_weight="1"
             android:text="@string/seven"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
@@ -94,6 +99,7 @@
             android:layout_weight="1"
             android:text="@string/eight"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
@@ -104,6 +110,7 @@
             android:layout_weight="1"
             android:text="@string/nine"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
@@ -114,6 +121,7 @@
             android:layout_weight="1"
             android:text="@string/multiplier"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOperations"
             tools:ignore="NestedWeights"/>
 
@@ -131,6 +139,7 @@
             android:layout_weight="1"
             android:text="@string/four"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
@@ -141,6 +150,7 @@
             android:layout_weight="1"
             android:text="@string/five"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
@@ -151,6 +161,7 @@
             android:layout_weight="1"
             android:text="@string/six"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
@@ -161,6 +172,7 @@
             android:layout_weight="1"
             android:text="@string/subtract"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOperations"
             tools:ignore="NestedWeights"/>
 
@@ -178,6 +190,7 @@
             android:layout_weight="1"
             android:text="@string/one"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
@@ -188,6 +201,7 @@
             android:layout_weight="1"
             android:text="@string/two"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
@@ -198,6 +212,7 @@
             android:layout_weight="1"
             android:text="@string/three"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights" />
 
@@ -208,6 +223,7 @@
             android:layout_weight="1"
             android:text="@string/sum"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOperations"
             tools:ignore="NestedWeights" />
 
@@ -225,6 +241,7 @@
             android:layout_weight="1"
             android:text="@string/i"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"/>
 
@@ -235,6 +252,7 @@
             android:layout_weight="1"
             android:text="@string/zero"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickNumber"
             style="@style/styleButtonNumbers"
             tools:ignore="NestedWeights"
             />
@@ -246,6 +264,7 @@
             android:layout_weight="1"
             android:text="@string/comma"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
@@ -257,6 +276,7 @@
             android:text="@string/equal"
             android:textSize="@dimen/buttonSize"
             style="@style/styleButtonOperations"
+            android:onClick="clickOperation"
             tools:ignore="NestedWeights" />
 
     </LinearLayout>
