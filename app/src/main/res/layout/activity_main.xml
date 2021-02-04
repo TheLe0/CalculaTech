@@ -363,6 +363,7 @@
             android:layout_weight="1"
             android:text="@string/exponential"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOperations"
             tools:ignore="NestedWeights" />
 

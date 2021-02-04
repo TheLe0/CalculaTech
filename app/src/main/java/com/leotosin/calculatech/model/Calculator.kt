@@ -18,7 +18,7 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
                 }
                 Operator.SUBTRACT ->
                 {
-                    this.operating -= this.lastOperating
+                    this.operating = this.lastOperating - this.operating
                 }
                 Operator.MULTIPLICATION ->
                 {
@@ -46,6 +46,10 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
             Operator.CHANGE_SIGNAL ->
             {
                 this.operating = -1*this.operating
+            }
+            Operator.EXPONENTIAL ->
+            {
+                this.operating *= this.operating
             }
             Operator.CLEAR ->
             {
@@ -90,7 +94,7 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
     {
         if (this.caretaker == null)
         {
-            this.caretaker = Caretaker(this.lastOperating, this.lastOperator)
+            this.caretaker = Caretaker(this.operating, this.lastOperator)
             this.lastOperator = ""
             this.lastOperating = 0.00
         }
