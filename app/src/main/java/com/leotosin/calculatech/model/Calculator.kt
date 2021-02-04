@@ -1,5 +1,7 @@
 package com.leotosin.calculatech.model
 
+import kotlin.math.sqrt
+
 class Calculator(override var lastOperating: Double = 0.00, override var lastOperator: String = "") : Memento
 {
     var operating :Double = 0.00
@@ -50,6 +52,10 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
             Operator.EXPONENTIAL ->
             {
                 this.operating *= this.operating
+            }
+            Operator.SQUARE ->
+            {
+                this.operating = sqrt(this.operating)
             }
             Operator.CLEAR ->
             {

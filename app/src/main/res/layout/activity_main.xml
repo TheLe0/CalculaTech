@@ -38,6 +38,7 @@
             android:layout_weight="1"
             android:text="@string/mc"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickMemory"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights"/>
 
@@ -48,6 +49,7 @@
             android:layout_weight="1"
             android:text="@string/mr"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickMemory"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights"/>
 
@@ -58,6 +60,7 @@
             android:layout_weight="1"
             android:text="@string/mPlus"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickMemory"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights" />
 
@@ -68,6 +71,7 @@
             android:layout_weight="1"
             android:text="@string/mMinus"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickMemory"
             style="@style/styleButtonOthers"
             tools:ignore="NestedWeights"/>
 
@@ -374,6 +378,7 @@
             android:layout_weight="1"
             android:text="@string/square"
             android:textSize="@dimen/buttonSize"
+            android:onClick="clickOperation"
             style="@style/styleButtonOperations"
             tools:ignore="NestedWeights" />
 
