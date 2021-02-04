@@ -12,7 +12,7 @@ import com.leotosin.calculatech.model.Operator
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
+class CalculatorUnitTest {
 
     private val calculator :Calculator = Calculator()
 
