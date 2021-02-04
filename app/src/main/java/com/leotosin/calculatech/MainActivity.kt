@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         val digit :String = button.text.toString()
         val txtVisor :TextView =  findViewById(R.id.txtNumber)
 
-        var result = ""
+        var result: String
 
         when (digit)
         {
@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
     {
         val button :Button = view as Button
         val operation :String = button.text.toString()
-        val txtVisor :TextView =  findViewById(R.id.txtNumber);
+        val txtVisor :TextView =  findViewById(R.id.txtNumber)
         val valueWithoutDelimiter :String = txtVisor.text.toString().replace(delimiterChar, '.')
 
         calculator.operating = valueWithoutDelimiter.toDouble()

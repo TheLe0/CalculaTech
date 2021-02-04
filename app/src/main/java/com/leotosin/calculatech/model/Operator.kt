@@ -7,6 +7,7 @@ object Operator
     const val CLEAR = "C"
     const val SUM = "+"
     const val SUBTRACT = "-"
+    const val EQUAL ="="
     const val MULTIPLICATION = "X"
     const val DIVISION = "÷"
     const val MEMORY_CLEAR = "MC"
