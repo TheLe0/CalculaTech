@@ -5,7 +5,7 @@ import kotlin.math.sqrt
 class Calculator(override var lastOperating: Double = 0.00, override var lastOperator: String = "") : Memento
 {
     var operating :Double = 0.00
-    private var memory :Double = 0.00
+    var memory :Double = 0.00
     private var caretaker :Caretaker? = null
 
     private fun performLastOperation()

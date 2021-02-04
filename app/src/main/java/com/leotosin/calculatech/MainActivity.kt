@@ -161,5 +161,14 @@ class MainActivity : AppCompatActivity() {
         calculator.operating = valueWithoutDelimiter.toDouble()
         calculator.performMemoryOperation(operation)
         userTypingNumber = false
+
+        var result :String = calculator.memory.toString()
+
+        if (result.endsWith(".0"))
+        {
+            result = result.substring(0, result.length - 2)
+        }
+
+        txtVisor.text = result
     }
 }
