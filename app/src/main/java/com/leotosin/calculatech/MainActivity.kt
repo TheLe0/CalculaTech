@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 import com.leotosin.calculatech.model.Calculator
+import com.leotosin.calculatech.model.Operator
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.text.NumberFormat
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var txtVisor :TextView =  findViewById(R.id.txtNumber);
+        val txtVisor :TextView =  findViewById(R.id.txtNumber)
         txtVisor.text = "0"
 
         val localization : Locale = resources.configuration.locales[0]
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             delimiter = delimiterChar.toString()
         }
 
-        var btnDelimiter :Button = findViewById(R.id.btnComma);
+        val btnDelimiter :Button = findViewById(R.id.btnComma)
         btnDelimiter.text = delimiter
 
         Toast.makeText(
@@ -50,12 +51,46 @@ class MainActivity : AppCompatActivity() {
         ).show()
     }
 
+    fun clickUndoRedo(view :View)
+    {
+        val button :Button = view as Button
+        val digit :String = button.text.toString()
+        val txtVisor :TextView =  findViewById(R.id.txtNumber)
+
+        var result = ""
+
+        when (digit)
+        {
+            Operator.UNDO ->
+            {
+                this.calculator.undo()
+                result = this.calculator.operating.toString()
+            }
+            Operator.REDO ->
+            {
+                this.calculator.redo()
+                result = this.calculator.operating.toString()
+            }
+            else ->
+            {
+                result = txtVisor.text.toString()
+            }
+        }
+
+        if (result.endsWith(".0"))
+        {
+            result = result.substring(0, result.length - 2)
+        }
+
+        txtVisor.text = result
+    }
+
     fun clickNumber(view :View)
     {
         val button :Button = view as Button
         val digit :String = button.text.toString()
-        var txtVisor :TextView =  findViewById(R.id.txtNumber);
-        var currentNumber :String = txtVisor.text.toString()
+        val txtVisor :TextView =  findViewById(R.id.txtNumber)
+        val currentNumber :String = txtVisor.text.toString()
 
         if (!userTypingNumber || currentNumber == "0")
         {
@@ -75,7 +110,7 @@ class MainActivity : AppCompatActivity() {
     {
         val button :Button = view as Button
         val operation :String = button.text.toString()
-        var txtVisor :TextView =  findViewById(R.id.txtNumber);
+        val txtVisor :TextView =  findViewById(R.id.txtNumber)
 
         if (operation == delimiter && !decimalDelimiterTyped)
         {
@@ -92,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         }
         else if (operation != delimiter)
         {
-            var valueWithoutDelimiter :String = txtVisor.text.toString().replace(delimiterChar, '.')
+            val valueWithoutDelimiter :String = txtVisor.text.toString().replace(delimiterChar, '.')
             calculator.operating = valueWithoutDelimiter.toDouble()
             calculator.performOperation(operation)
 

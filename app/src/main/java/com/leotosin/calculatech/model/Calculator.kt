@@ -4,6 +4,7 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
 {
     var operating :Double = 0.00
     private var memory :Double = 0.00
+    private var caretaker :Caretaker? = null
 
     private fun performLastOperation()
     {
@@ -82,6 +83,26 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
             {
                 this.operating = this.memory
             }
+        }
+    }
+
+    override fun undo()
+    {
+        if (this.caretaker == null)
+        {
+            this.caretaker = Caretaker(this.lastOperating, this.lastOperator)
+            this.lastOperator = ""
+            this.lastOperating = 0.00
+        }
+    }
+
+    override fun redo()
+    {
+        if (this.caretaker != null)
+        {
+            this.lastOperator = this.caretaker!!.operator
+            this.lastOperating = this.caretaker!!.operating
+            this.caretaker = null
         }
     }
 }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -22,6 +23,53 @@
             android:text="@string/zero"
             android:textAlignment="textEnd"
             android:textSize="@dimen/numberSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mc"
+            android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOthers"
+            tools:ignore="NestedWeights"/>
+
+        <Button
+            android:id="@+id/btnMR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mr"
+            android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOthers"
+            tools:ignore="NestedWeights"/>
+
+        <Button
+            android:id="@+id/btnMPlus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mPlus"
+            android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOthers"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnMMinus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mMinus"
+            android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOthers"
+            tools:ignore="NestedWeights"/>
 
     </LinearLayout>
 
@@ -277,6 +325,55 @@
             android:textSize="@dimen/buttonSize"
             style="@style/styleButtonOperations"
             android:onClick="clickOperation"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/undo"
+            android:textSize="@dimen/buttonSize"
+            android:onClick="clickUndoRedo"
+            style="@style/styleButtonOthers"
+            tools:ignore="NestedWeights"/>
+
+        <Button
+            android:id="@+id/btnRedo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/redo"
+            android:textSize="@dimen/buttonSize"
+            android:onClick="clickUndoRedo"
+            style="@style/styleButtonOthers"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnExponential"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/exponential"
+            android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOperations"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/square"
+            android:textSize="@dimen/buttonSize"
+            style="@style/styleButtonOperations"
             tools:ignore="NestedWeights" />
 
     </LinearLayout>

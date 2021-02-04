@@ -4,4 +4,7 @@ interface Memento
 {
     var lastOperating :Double
     var lastOperator :String
+
+    fun undo ()
+    fun redo ()
 }
