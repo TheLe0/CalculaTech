@@ -1,6 +1,6 @@
 # CalculaTech
 
-![Android CI](https://github.com/TheLe0/PandemicControlApp/workflows/Android%20CI/badge.svg)
+![Android CI](https://github.com/TheLe0/CalculaTech/workflows/Android%20CI/badge.svg)
 
 ## Introduction ##
 
