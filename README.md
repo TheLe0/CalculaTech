@@ -1,5 +1,7 @@
 # CalculaTech
 
+![Android CI](https://github.com/TheLe0/PandemicControlApp/workflows/Android%20CI/badge.svg)
+
 ## Introduction ##
 
 This app is a simple calculator, to do some simple arithmetics operations and some more advances ones.
