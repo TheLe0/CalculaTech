@@ -1,2 +1,5 @@
 # CalculaTech
-🧮 Simple Android app of a simple calculator 📓
+
+This app is a simple calculator, to do some simple arithmetics operations and some more advances ones.
+
+![Print](./imgs/print.png)
