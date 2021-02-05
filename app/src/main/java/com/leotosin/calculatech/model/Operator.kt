@@ -18,4 +18,5 @@ object Operator
     const val UNDO = "⟲"
     const val EXPONENTIAL = "x²"
     const val SQUARE = "✓"
+    const val FACTORIAL = "!"
 }

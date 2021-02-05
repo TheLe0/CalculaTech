@@ -19,7 +19,7 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="equal">=</string>
-    <string name="i">I</string>
+    <string name="factorial">!</string>
     <string name="redo">⟳</string>
     <string name="undo">⟲</string>
     <string name="exponential">x²</string>

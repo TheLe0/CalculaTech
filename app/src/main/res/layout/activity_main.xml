@@ -291,7 +291,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/i"
+            android:text="@string/factorial"
             android:textSize="@dimen/buttonSize"
             android:onClick="clickOperation"
             style="@style/styleButtonNumbers"

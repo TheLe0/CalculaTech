@@ -125,4 +125,15 @@ class CalculatorUnitTest {
 
         assertEquals(11.00, calculator.memory, 0.00)
     }
+
+    @Test
+    fun factory_isCorrect()
+    {
+        calculator.operating = 5.00
+
+        calculator.performOperation(Operator.FACTORIAL)
+
+        assertEquals(120.00, calculator.operating, 0.00)
+    }
+
 }

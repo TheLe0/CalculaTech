@@ -43,12 +43,6 @@ class MainActivity : AppCompatActivity() {
 
         val btnDelimiter :Button = findViewById(R.id.btnComma)
         btnDelimiter.text = delimiter
-
-        Toast.makeText(
-            this,
-            getString(R.string.welcomeMessage),
-            Toast.LENGTH_LONG
-        ).show()
     }
 
     fun clickUndoRedo(view :View)

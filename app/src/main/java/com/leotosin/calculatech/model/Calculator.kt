@@ -2,6 +2,8 @@ package com.leotosin.calculatech.model
 
 import kotlin.math.sqrt
 
+import com.leotosin.calculatech.util.MathUtil
+
 class Calculator(override var lastOperating: Double = 0.00, override var lastOperator: String = "") : Memento
 {
     var operating :Double = 0.00
@@ -39,6 +41,8 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
 
     fun performOperation(op :String)
     {
+        this.caretaker = Caretaker(this.lastOperating, op, MementoState.NONE)
+
         when (op)
         {
             Operator.PERCENT ->
@@ -56,6 +60,10 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
             Operator.SQUARE ->
             {
                 this.operating = sqrt(this.operating)
+            }
+            Operator.FACTORIAL ->
+            {
+                this.operating = MathUtil.factorial(this.operating.toInt()).toDouble()
             }
             Operator.CLEAR ->
             {
@@ -98,21 +106,31 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
 
     override fun undo()
     {
-        if (this.caretaker == null)
+        if (this.caretaker != null && this.caretaker!!.state != MementoState.UNDO)
         {
-            this.caretaker = Caretaker(this.operating, this.lastOperator)
+            this.caretaker = Caretaker(
+                this.operating,
+                this.lastOperator,
+                MementoState.UNDO
+            )
             this.lastOperator = ""
             this.lastOperating = 0.00
+            this.operating = this.caretaker!!.operating
         }
     }
 
     override fun redo()
     {
-        if (this.caretaker != null)
+        if (this.caretaker != null && this.caretaker!!.state == MementoState.REDO)
         {
             this.lastOperator = this.caretaker!!.operator
             this.lastOperating = this.caretaker!!.operating
-            this.caretaker = null
+
+            this.caretaker = Caretaker(
+                    this.operating,
+                    this.lastOperator,
+                    MementoState.REDO
+            )
         }
     }
 }
