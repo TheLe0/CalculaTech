@@ -1,5 +1,6 @@
 package com.leotosin.calculatech.model
 
+import android.widget.Toast
 import kotlin.math.sqrt
 
 import com.leotosin.calculatech.util.MathUtil
@@ -64,6 +65,11 @@ class Calculator(override var lastOperating: Double = 0.00, override var lastOpe
             Operator.FACTORIAL ->
             {
                 this.operating = MathUtil.factorial(this.operating.toInt()).toDouble()
+
+                if (this.operating >= Double.MAX_VALUE)
+                {
+                    this.operating = 0.00
+                }
             }
             Operator.CLEAR ->
             {

@@ -77,12 +77,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         txtVisor.text = result
-
-        Toast.makeText(
-                this,
-                "${calculator.operating} ${calculator.lastOperating} ${calculator.lastOperator}",
-                Toast.LENGTH_LONG
-        ).show()
     }
 
     fun clickNumber(view :View)
